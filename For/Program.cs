@@ -12,16 +12,12 @@ namespace For
         {
             Console.Write("Введите X = ");
             int n = int.Parse(Console.ReadLine());
-            int z = 3;
-            int x = 4;
-            int answer = 0;
+            double s = 0;
             for (int k = 1; k <= n; k++)
             {
-                answer += z * x;
-                z = z + 3;
-                x = x + 2;
+                s += (3 * k) * (3 * k + (2 - k));
             }
-            Console.WriteLine($"Ответ сумма ряда = {answer}");
+            Console.WriteLine($"Ответ: {s}");
         }
     }
 }
